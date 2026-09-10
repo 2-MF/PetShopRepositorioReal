@@ -1,0 +1,11 @@
+CREATE DATABASE IF NOT EXISTS petshop;
+USE petshop;
+
+CREATE TABLE IF NOT EXISTS servicios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    perro VARCHAR(100) NOT NULL,
+    servicio VARCHAR(50) NOT NULL,
+    horario VARCHAR(50) NOT NULL,
+    precio DECIMAL(10,2) NOT NULL,
+    limpiador VARCHAR(100) NOT NULL
+);
